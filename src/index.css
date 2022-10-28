@@ -1,0 +1,162 @@
+body {
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: small;
+    
+}
+html,body{
+  height:297mm;
+  width:210mm;
+}
+
+
+.app-container{
+  position:absolute;
+  display:grid;
+  grid-template-columns: 1fr 5fr;
+ /* width:100vw;
+  height: 100vh;*/
+ /* padding : 0px 150px;*/
+ top:0;
+ left:10%;
+}
+
+.address-container{
+  
+  grid-column: 1/2;
+  grid-row:1/5;
+ /* border: .01em solid black;*/
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left:5px;
+}
+.address-container:hover > .edit-button,.summary-container:hover > .edit-button{
+  display: block;
+  width:80px;
+  height:30px;
+  background-color: rgb(76, 76, 228);
+  color:white;
+  font-weight: 800;
+  text-transform: uppercase;
+  
+  border-radius: 4px;
+  letter-spacing: 0.1rem;
+  box-shadow: -5px 5px 5px rgba(9, 30, 83, 0.4);
+  border-color: aliceblue;
+  cursor: pointer;
+}
+
+.education:hover>.add-button, .education-container:hover > .add-button, .experience:hover > .add-button,.experience-container:hover > .add-button
+{
+  display: block;
+   background-color: rgb(76, 76, 228);
+  color:white;
+  font-weight: 800;
+  text-transform: uppercase;
+  
+  border-radius: 4px;
+  letter-spacing: 0.1rem;
+  box-shadow: -5px 5px 5px rgba(9, 30, 83, 0.4);
+  border-color: aliceblue;
+  cursor: pointer;
+}
+
+.header:hover > .add-button {
+  display: block;
+  /*width:80px;
+  height:50px;*/
+  background-color: rgb(76, 76, 228);
+  color:white;
+  font-weight: 800;
+  text-transform: uppercase;
+  
+  border-radius: 4px;
+  letter-spacing: 0.1rem;
+  box-shadow: -5px 5px 5px rgba(9, 30, 83, 0.4);
+  border-color: aliceblue;
+  cursor: pointer;
+
+}
+
+
+
+.edit-button{
+  display:none;
+}
+.add-button{
+  display:none;
+
+}
+.form-container{
+  position:fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,0,0,0.6);
+  
+}
+
+.info-edit-form {
+  position: absolute;
+  top:30%;
+  left:35%;
+  width:25vw;
+  height:35vh;
+  display:flex;
+  flex-direction: column;
+  border: 1px solid blue;
+  justify-content: space-around;
+  background-color: teal;
+  color: white;
+  padding:1em;
+  border-radius: 8px;
+}
+img{
+  border-radius: 50%;
+  padding-right: 5px;
+}
+
+.summary-container {
+  grid-column: 2;
+  grid-row: 1/2;
+  
+}
+.education-container {
+  grid-column: 2;
+  grid-row: 2/3;
+
+}
+.education-field, .experience-field{
+  display:flex;
+  justify-content: space-between;
+  width:40vw;
+}
+
+.experience-container{
+  grid-column: 2;
+  grid-row: 3/4;
+}
+
+.info {
+  width:50vw;
+
+}
+
+.header{
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+h2,.bottom{
+  border-bottom: 1px solid;
+}
+
+.bold{
+  font-weight: 700;
+}
+
