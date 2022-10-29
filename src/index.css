@@ -104,8 +104,8 @@ html,body{
   position: absolute;
   top:30%;
   left:35%;
-  width:25vw;
-  height:35vh;
+  width:30vw;
+  height:45vh;
   display:flex;
   flex-direction: column;
   border: 1px solid blue;
