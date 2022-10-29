@@ -8,10 +8,10 @@ const initialState = {
     field: "",
 
     details: [{
-        graduate_date: "july 1994",
-        school: "Oxford",
-        city: "London",
-        field: "BS in Electric&Electronics Engineering"
+        graduate_date: "july 1971",
+        school: "Polk High School",
+        city: "Chicago",
+        field: "Football team member"
     }],
 
     isAdd: false

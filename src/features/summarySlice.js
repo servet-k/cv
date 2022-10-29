@@ -4,7 +4,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState={
     
-    overview: "Lorem ipsum dolor, sit amet consectetur adipisicing elit",
+    overview: "Love nudie magazines, free beer, bowling, and nudie bars.Lets Rock.",
     isEdit:false 
 }
 

@@ -9,11 +9,11 @@ const initialState = {
     info:"",
 
     details: [{
-        date_range: "Jan 2010-oct 2020",
-        company: "Google Company",
-        city: "İstanbul",
-        title: "Support Engineer",
-        info: "Bla bla bla..."
+        date_range: "Jan 1972-Dec 2020",
+        company: "Gary's Shoes and Accessories",
+        city: "Chicago",
+        title: "Women's shoe salesman",
+        info: ""
     }],
 
     isAdd: false

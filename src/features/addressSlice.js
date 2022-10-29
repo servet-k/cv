@@ -1,15 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
-import kitten from "../images/kitten.jpg"
+
 
 const initialState = {
-    image: kitten,
-    fullName: "John Doe",
-    addr: "elm st. no:11",
+    image: "https://upload.wikimedia.org/wikipedia/en/d/d1/Al_Bundy_%28Ed_O%27Neill%29.jpg",
+    fullName: "Al Bundy",
+    addr: "Chicago, Illinois.",
     phone: "555 1234567",
-    email: "jhondoe@gmail.com",
-    birth: "2000-01-01",
-    skills:"asda",
+    email: "Albundy@gmail.com",
+    birth: "Nov 1948",
+    skills:"",
     isEdit: false,
+    skillList:["4 touchdowns in a single game"]
 }
 
 
@@ -26,10 +27,17 @@ const addressSlice = createSlice({
         },
         toggle: (state, action) => {
             state.isEdit = !state.isEdit;
+        },
+        skillPush:(state,action)=>{
+            state.skillList.push(state.skills)
+        },
+        removeData:(state,action)=>{
+            state.skillList.splice(action.payload,1)
         }
+
 
     }
 })
 
 export default addressSlice.reducer;
-export const { editInfo, toggle } = addressSlice.actions;
+export const { editInfo, toggle,skillPush,removeData } = addressSlice.actions;
