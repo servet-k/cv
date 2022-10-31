@@ -64,7 +64,7 @@ const Address = () => {
                 <div className="form-container">
                     <form className="info-edit-form" onSubmit={handleSubmit}>
 
-                        <label htmlFor="image">Full Name</label>
+                        <label htmlFor="image">Picture url</label>
                         <input name="image" value={image} placeholder="Enter url of picture" type="text" onChange={handleChange} />
 
 
