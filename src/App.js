@@ -7,10 +7,10 @@ function App() {
   return (
     <div className="app-container">
       <Address />
-     <Summary />
-      <Education />    
-    <Experience />
-     
+      <Summary />
+      <Education />
+      <Experience />
+
     </div>
   );
 }

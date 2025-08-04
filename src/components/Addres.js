@@ -10,7 +10,9 @@ const Address = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(toggle());
+        if (skills!==""){
         dispatch(skillPush());
+        }
 
     }
     const handleChange = (e) => {
